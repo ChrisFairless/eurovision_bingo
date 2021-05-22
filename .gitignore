@@ -4,7 +4,7 @@
 
 risk/static/data/
 
-
+config_vars.txt
 
 *.log
 *.pot

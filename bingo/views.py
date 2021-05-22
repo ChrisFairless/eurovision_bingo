@@ -1,10 +1,5 @@
 from django.shortcuts import render
-import numpy as np
-import pandas as pd
 import random
-from django.http import HttpResponse
-from django.views.generic import TemplateView
-
 
 def index(request):
 

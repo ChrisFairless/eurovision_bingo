@@ -1,0 +1,1 @@
+web: gunicorn eurovision_bingo.wsgi
