@@ -7,7 +7,7 @@
     <title>E U R O V I S I O N  B I N G O</title>
 </head>
 <body>
-<h1>Eurovision Bingo!</h1>
+<h1 align="center">Eurovision Bingo!</h1>
 <script>
     function setColor(e) {
       var target = e.target,
@@ -17,7 +17,6 @@
        target.dataset.count = count === 1 ? 0 : 1;
     }
 </script>
-
 
 <table width="90%", max-width="1200px" align="center">
   {% for sublist in options %}
@@ -35,5 +34,9 @@
     </tr>
   {% endfor %}
 </table>
+
+    <p  />
+    <p align="center">Refresh for a new card // <a href="https://github.com/ChrisFairless/eurovision_bingo">Source code</a></p>
+
 </body>
 </html>
