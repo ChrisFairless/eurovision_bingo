@@ -8,11 +8,29 @@
 </head>
 <body>
 <h1>Eurovision Bingo!</h1>
-<table width="90%", max-width="800px" align="center">
+<script>
+    function setColor(e) {
+      var target = e.target,
+          count = +target.dataset.count;
+
+       target.style.backgroundColor = count === 1 ? "#FFB6C1" : '#FFFFFF';
+       target.dataset.count = count === 1 ? 0 : 1;
+    }
+</script>
+
+
+<table width="90%", max-width="1000px" align="center">
   {% for sublist in options %}
     <tr>
         {% for item in sublist %}
-            <td width="20%">{{ item }}</td>
+            <td width="20%">
+                <div class="button"
+                     type="button"
+                     onclick="setColor(event)";
+                     data-count="1">
+                    {{ item }}
+                </div>
+            </td>
         {% endfor %}
     </tr>
   {% endfor %}
