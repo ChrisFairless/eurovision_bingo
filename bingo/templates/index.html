@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel='stylesheet' href="{% static 'css/base.css' %}">
+    <meta charset="UTF-8">
+    <title>E U R O V I S I O N  B I N G O</title>
+</head>
+<body>
+<h1>Eurovision Bingo!</h1>
+<table width="90%", max-width="800px" align="center">
+  {% for sublist in options %}
+    <tr>
+        {% for item in sublist %}
+            <td width="20%">{{ item }}</td>
+        {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+</body>
+</html>
